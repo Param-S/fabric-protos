@@ -58,10 +58,11 @@ message NodeTransactionOrderRequest {
 // or failure status to the sender.
 message TransactionOrderResponse {
     string channel = 1;
+    string tx_id = 2;
     // Status code, which may be used to programatically respond to success/failure.
-    common.Status status = 2;
+    common.Status status = 3;
     // Info string which may contain additional information about the returned status.
-    string info = 3;
+    string info = 4;
 }
 
 // NodeAuthRequest for authenticate the stream 
